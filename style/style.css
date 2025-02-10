@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/photo_2025-02-10_15-09-45.jpg') no-repeat center/cover;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    transform: .3s ease-in-out;
+}
+
+.invitation {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: #b76e79;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.names {
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.names span {
+    color: #b76e79;
+    font-size: 28px;
+}
+
+.date, .location, .time, .link {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    margin: 5px 0;
+}
+
+.message {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0;
+}
+
+.map {
+    width: 100%;
+    margin-top: 7px;
+    animation: slideInBottom 1.5s ease-in-out;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInBottom {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Адаптивность */
+@media (max-width: 500px) {
+    .invitation {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .names {
+        font-size: 20px;
+    }
+}
