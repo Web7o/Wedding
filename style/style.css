@@ -70,6 +70,10 @@ h1 {
     animation: slideInBottom 1.5s ease-in-out;
 }
 
+.link {
+    margin-bottom: 15px;
+}
+
 /* Анимации */
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
